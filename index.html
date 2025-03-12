@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="weather-container">
+      <h2>Weather app</h2>
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+      <img id="weather-icon" alt="Weather Icon" />
+      <div id="temp-div"></div>
+      <div id="weather-info"></div>
+      <div id="daily-forecast"></div>
+      <div id="hourly-forecast"></div>
+    </div>
+  </body>
+</html>
